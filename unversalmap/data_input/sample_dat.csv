@@ -1,0 +1,35 @@
+no,province,prov_id,year,unit,value
+1,Aceh,11,2017,IDR per kWh,1491
+2,Sumatera Utara,12,2017,IDR per kWh,1308
+3,Sumatera ,13,2017,IDR per kWh,971
+4,Riau,14,2017,IDR per kWh,1470
+5,Riau Island,21,2017,IDR per kWh,1470
+6,Sumatera Selatan,16,2017,IDR per kWh,961
+7,Jambi,15,2017,IDR per kWh,961
+8,Bengkulu,17,2017,IDR per kWh,961
+9,Lampung,18,2017,IDR per kWh,936
+10,Jakarta,31,2017,IDR per kWh,911
+11,Banten,36,2017,IDR per kWh,911
+12,Jawa Barat,32,2017,IDR per kWh,911
+13,Jawa Tengah,35,2017,IDR per kWh,914
+14,Bali,51,2017,IDR per kWh,911
+15,Kalimantan Barat,61,2017,IDR per kWh,1692
+16,Kalimantan Selatan,63,2017,IDR per kWh,1149
+17,Kalimantan Tengah,62,2017,IDR per kWh,1149
+18,Kalimantan Timur,64,2017,IDR per kWh,1481
+19,Kalimantan Utara,65,2017,IDR per kWh,1481
+20,Nusa Tenggara Barat,52,2017,IDR per kWh,1939
+21,Nusa Tenggara Timur,53,2017,IDR per kWh,2677
+22,Maluku,81,2017,IDR per kWh,2591
+23,Maluku Utara,82,2017,IDR per kWh,2591
+24,Papua,91,2017,IDR per kWh,2079
+25,Papua Barat,92,2017,IDR per kWh,2079
+26,Sulawesi Utara,71,2017,IDR per kWh,1732
+27,Sulawesi Tengah,72,2017,IDR per kWh,1732
+28,Gorontalo,75,2017,IDR per kWh,1732
+29,Sulawesi Selatan,73,2017,IDR per kWh,1115
+30,Sulawesi Tenggara,74,2017,IDR per kWh,1115
+31,Sulawesi Barat,76,2017,IDR per kWh,1115
+32,Bangka Belitung,19,2017,IDR per kWh,1887
+33,Jawa Tengah,33,2017,IDR per kWh,911
+34,Yogyakarta,34,2017,IDR per kWh,911

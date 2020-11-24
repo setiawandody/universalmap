@@ -1,0 +1,47 @@
+---
+title: "Untitled"
+author: "Dody Setiawan"
+date: "November 23, 2020"
+output: html_document
+---
+
+```{r}
+library(leaflet)
+library(ggplot2)
+library(dplyr)
+library(highcharter)
+library(tidyr)
+library(viridis)
+library(RJSONIO)
+```
+
+```{r}
+
+dat <- read.csv("sample_dat.csv", header = T)
+title <- "title is here"
+subtitle <- "subtitle is here"
+
+hcmap("https://code.highcharts.com/mapdata/countries/id/id-all.js", data = dat, value = "value" ,
+      joinBy = c("name", "province"), name = "Potensi Teknis",
+      dataLabels = list(enabled = TRUE, format = '{point.name}'),
+      borderColor = "#FAFAFA", borderWidth = 0.05,
+      tooltip = list(valueDecimals = 0, valuePrefix= '~', valueSuffix= ' MW')) %>%
+  hc_title(text = title, align = "left") %>% 
+  hc_subtitle(text = subtitle, align = "left") %>%
+  hc_legend(enabled = TRUE, reversed = TRUE) %>% 
+  hc_colorAxis(stops = color_stops(colors = viridis(30, direction = -1))) %>%
+  hc_add_theme(hc_theme_economist()) %>% 
+  hc_legend(title = list(text = "Technical Potential (MW)"), align = "right", verticalAlign = "top", floating = TRUE,
+            layout = "horizontal", x = 0, y = 0) 
+
+```
+
+```{r}
+url <- "https://code.highcharts.com/mapdata/countries/id/id-all.geo.json"
+dat <- fromJSON(url)
+str(dat$features)
+
+dat$features[[1]]
+
+```
+
